@@ -13,6 +13,8 @@
 		0F9FEB171EE2E80000CF8904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F9FEB161EE2E80000CF8904 /* Assets.xcassets */; };
 		0F9FEB1A1EE2E80100CF8904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9FEB181EE2E80100CF8904 /* Main.storyboard */; };
 		0F9FEB251EE2E80100CF8904 /* ScaryBugsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FEB241EE2E80100CF8904 /* ScaryBugsUITests.m */; };
+		0F9FEB321EE2E8EC00CF8904 /* ScaryBugDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FEB311EE2E8EC00CF8904 /* ScaryBugDoc.m */; };
+		0F9FEB351EE2E8F700CF8904 /* ScaryBugData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FEB341EE2E8F700CF8904 /* ScaryBugData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		0F9FEB201EE2E80100CF8904 /* ScaryBugsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScaryBugsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9FEB241EE2E80100CF8904 /* ScaryBugsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaryBugsUITests.m; sourceTree = "<group>"; };
 		0F9FEB261EE2E80100CF8904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F9FEB301EE2E8EC00CF8904 /* ScaryBugDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaryBugDoc.h; sourceTree = "<group>"; };
+		0F9FEB311EE2E8EC00CF8904 /* ScaryBugDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaryBugDoc.m; sourceTree = "<group>"; };
+		0F9FEB331EE2E8F700CF8904 /* ScaryBugData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaryBugData.h; sourceTree = "<group>"; };
+		0F9FEB341EE2E8F700CF8904 /* ScaryBugData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaryBugData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		0F9FEB0C1EE2E80000CF8904 /* ScaryBugs */ = {
 			isa = PBXGroup;
 			children = (
+				0F9FEB2F1EE2E8D500CF8904 /* Model */,
 				0F9FEB0D1EE2E80000CF8904 /* AppDelegate.h */,
 				0F9FEB0E1EE2E80000CF8904 /* AppDelegate.m */,
 				0F9FEB131EE2E80000CF8904 /* ViewController.h */,
@@ -106,6 +113,17 @@
 				0F9FEB261EE2E80100CF8904 /* Info.plist */,
 			);
 			path = ScaryBugsUITests;
+			sourceTree = "<group>";
+		};
+		0F9FEB2F1EE2E8D500CF8904 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F9FEB331EE2E8F700CF8904 /* ScaryBugData.h */,
+				0F9FEB341EE2E8F700CF8904 /* ScaryBugData.m */,
+				0F9FEB301EE2E8EC00CF8904 /* ScaryBugDoc.h */,
+				0F9FEB311EE2E8EC00CF8904 /* ScaryBugDoc.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9FEB351EE2E8F700CF8904 /* ScaryBugData.m in Sources */,
 				0F9FEB151EE2E80000CF8904 /* ViewController.m in Sources */,
 				0F9FEB121EE2E80000CF8904 /* main.m in Sources */,
+				0F9FEB321EE2E8EC00CF8904 /* ScaryBugDoc.m in Sources */,
 				0F9FEB0F1EE2E80000CF8904 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
